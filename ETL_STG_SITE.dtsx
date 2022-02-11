@@ -1,0 +1,130 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/10/2022 2:45:40 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SPBD005"
+  DTS:CreatorName="CARTAOBRB\matheus.cerqueira"
+  DTS:DTSID="{BF04543E-E96D-4C81-930A-24C9AD74D73B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1046"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{A434078F-BE42-48C4-9D05-C79BAC3B13C7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{559BABBE-03D5-4CBF-8E32-324A3D6500A7}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Create e Load STG_SITE_FORM_SOLICITACAO_CARTAO"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{214E6E2F-BFEC-4FF9-8D53-EACA5D0364D2}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Create e Load STG_SITE_FORM_SOLICITACAO_CARTAO"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{656C6A26-51BF-4135-BCBF-B213F1A76077}"
+              SQLTask:SqlStatementSource="SELECT TOP 100 *&#xA;INTO [STG_DM_BRBCARD].[dbo].[STG_SITE_FORM_SOLICITACAO_CARTAO]&#xA;FROM [SRV011].[PRD_SITE].[dbo].[Tb_Form_Solicitacao_Cartao]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Drop STG_SITE_FORM_SOLICITACAO_CARTAO"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{4A7A5F69-1D5D-4014-B27F-104827377F67}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Drop STG_SITE_FORM_SOLICITACAO_CARTAO"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{656C6A26-51BF-4135-BCBF-B213F1A76077}"
+              SQLTask:SqlStatementSource="Drop Table [STG_DM_BRBCARD].[dbo].[STG_SITE_FORM_SOLICITACAO_CARTAO]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{854F25AC-7493-40B8-9AC4-29A5386045EF}"
+          DTS:From="Package\Sequence Container\Drop STG_SITE_FORM_SOLICITACAO_CARTAO"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container\Create e Load STG_SITE_FORM_SOLICITACAO_CARTAO" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="375,42"
+          Id="Package\Sequence Container\Create e Load STG_SITE_FORM_SOLICITACAO_CARTAO"
+          TopLeft="51,146" />
+        <NodeLayout
+          Size="329,42"
+          Id="Package\Sequence Container\Drop STG_SITE_FORM_SOLICITACAO_CARTAO"
+          TopLeft="69,47.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="236,89.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.5"
+              Start="0,0"
+              End="0,49">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="466,243"
+          Size="466,286"
+          Id="Package\Sequence Container"
+          TopLeft="322,175" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

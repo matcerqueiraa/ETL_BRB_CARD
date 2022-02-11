@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="SPBD005.STG_DM_BRBCARD"
+  DTS:DTSID="{656C6A26-51BF-4135-BCBF-B213F1A76077}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=SPBD005;Initial Catalog=STG_DM_BRBCARD;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

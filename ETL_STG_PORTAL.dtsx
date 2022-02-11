@@ -1,0 +1,130 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/10/2022 2:20:41 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SPBD005"
+  DTS:CreatorName="CARTAOBRB\matheus.cerqueira"
+  DTS:DTSID="{BC03136A-E84A-4FAE-9698-E068941F9E14}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1046"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{98001EDB-720D-4D47-8BB3-2609D97E139B}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{54c67fc7-92fe-4cf5-a116-1e8e9ecd6925}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Create e Load STG_PORTAL_PRODUTO_PORTAL"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{229be1fe-c4e1-4a0f-bdaf-fd62a8acedd6}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Create e Load STG_PORTAL_PRODUTO_PORTAL"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{656C6A26-51BF-4135-BCBF-B213F1A76077}"
+              SQLTask:SqlStatementSource="SELECT TOP 100 *&#xA;INTO [STG_DM_BRBCARD].[dbo].[STG_PORTAL_PRODUTO_PORTAL]&#xA;FROM [SRV011].[PRD_PORTAL].[dbo].[TB_PRODUTO_PORTAL]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Drop STG_PORTAL_PRODUTO_PORTAL"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{373b5bf2-f9e5-45e7-8d6f-27ead34f2f06}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Drop STG_PORTAL_PRODUTO_PORTAL"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{656C6A26-51BF-4135-BCBF-B213F1A76077}"
+              SQLTask:SqlStatementSource="Drop Table [STG_DM_BRBCARD].[dbo].[STG_PORTAL_PRODUTO_PORTAL]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{c971bf27-b3ec-4681-9383-6267ade81593}"
+          DTS:From="Package\Sequence Container\Drop STG_PORTAL_PRODUTO_PORTAL"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container\Create e Load STG_PORTAL_PRODUTO_PORTAL" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="335,42"
+          Id="Package\Sequence Container\Create e Load STG_PORTAL_PRODUTO_PORTAL"
+          TopLeft="51,146" />
+        <NodeLayout
+          Size="290,42"
+          Id="Package\Sequence Container\Drop STG_PORTAL_PRODUTO_PORTAL"
+          TopLeft="69,47.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="216.25,89.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.5"
+              Start="0,0"
+              End="0,49">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="466,243"
+          Size="466,286"
+          Id="Package\Sequence Container"
+          TopLeft="60,60" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

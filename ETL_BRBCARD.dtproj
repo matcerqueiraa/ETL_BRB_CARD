@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DeploymentModel>Project</DeploymentModel>
+  <ProductVersion>15.0.2000.170</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>ETL_BRBCARD.database</Name>
+    <FullPath>ETL_BRBCARD.database</FullPath>
+  </Database>
+  <DataSources />
+  <DataSourceViews />
+  <DeploymentModelSpecificContent>
+    <Manifest>
+      <SSIS:Project SSIS:ProtectionLevel="EncryptSensitiveWithUserKey" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
+        <SSIS:Properties>
+          <SSIS:Property SSIS:Name="ID">{56170472-a1fb-4c0f-908f-5e196ae87d16}</SSIS:Property>
+          <SSIS:Property SSIS:Name="Name">ETL_BRBCARD</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionComments">
+          </SSIS:Property>
+          <SSIS:Property SSIS:Name="CreationDate">2022-02-10T14:20:40.202942-03:00</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreatorName">CARTAOBRB\matheus.cerqueira</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreatorComputerName">SPBD005</SSIS:Property>
+          <SSIS:Property SSIS:Name="Description">
+          </SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAC/wURP7vfUKBjg9G32qlVAAAAAACAAAAAAADZgAAwAAAABAAAAAU8FH5lCxlKJ7Dc+seKbbGAAAAAASAAACgAAAAEAAAAKa4/7bE5UFFblsRBjPMWiGIAAAAz1MHvzSnT77edOVwXrkpWg45PYvRPFWw4DG+7Co2e1fXQJYCgvvJAO17iHdT1vyzThthT4w+jklmecOyPrHQdXULKox2+8rNVVHxExddT9i/AX5RzeU9KonA5muREowHuVCIz4SaBxkw4VKlZqo9Jw3RHe3nowKs7MIGUIPkWO2Ue+6cRBfdYxQAAAA48CpSHcfeyOME1CJsi9ULS1ihWg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
+        </SSIS:Properties>
+        <SSIS:Packages>
+          <SSIS:Package SSIS:Name="ETL_STG_PORTAL.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="ETL_STG_SITE.dtsx" SSIS:EntryPoint="1" />
+        </SSIS:Packages>
+        <SSIS:ConnectionManagers>
+          <SSIS:ConnectionManager SSIS:Name="SPBD005_STAGE.conmgr" />
+        </SSIS:ConnectionManagers>
+        <SSIS:DeploymentInfo>
+          <SSIS:ProjectConnectionParameters>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.ConnectByProxy">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.ConnectionString">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=SPBD005;Initial Catalog=STG_DM_BRBCARD;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.ConnectRetryCount">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.ConnectRetryInterval">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.ConnectUsingManagedIdentity">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.InitialCatalog">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">STG_DM_BRBCARD</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.Password">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.RetainSameConnection">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.ServerName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">SPBD005</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+            <SSIS:Parameter SSIS:Name="CM.SPBD005.STG_DM_BRBCARD.UserName">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="CreationName">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+              </SSIS:Properties>
+            </SSIS:Parameter>
+          </SSIS:ProjectConnectionParameters>
+          <SSIS:PackageInfo>
+            <SSIS:PackageMetaData SSIS:Name="ETL_STG_PORTAL.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{BC03136A-E84A-4FAE-9698-E068941F9E14}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{98001EDB-720D-4D47-8BB3-2609D97E139B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="ETL_STG_SITE.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{BF04543E-E96D-4C81-930A-24C9AD74D73B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A434078F-BE42-48C4-9D05-C79BAC3B13C7}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+          </SSIS:PackageInfo>
+        </SSIS:DeploymentInfo>
+      </SSIS:Project>
+    </Manifest>
+  </DeploymentModelSpecificContent>
+  <ControlFlowParts />
+  <Miscellaneous />
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings />
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings />
+        <DatabaseStorageLocations />
+        <TargetServerVersion>SQLServer2019</TargetServerVersion>
+        <AzureMode>false</AzureMode>
+        <LinkedAzureTenantId />
+        <LinkedAzureAccountId />
+        <LinkedAzureSSISIR />
+        <LinkedAzureStorage />
+        <RemoteExecutionFolder />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2022-02-10T17:51:44.7115459Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

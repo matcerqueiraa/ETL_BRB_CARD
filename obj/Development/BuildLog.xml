@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectInfo>
+    <Name>ETL_BRBCARD</Name>
+    <LastWriteTime>2022-02-10T17:53:51.7750339Z</LastWriteTime>
+    <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+  </ProjectInfo>
+  <LastBuildInfos>
+    <ProjectBuildItemInfo>
+      <Name>ETL_STG_PORTAL.dtsx</Name>
+      <LastWriteTime>2022-02-10T17:51:40.4592791Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ETL_STG_SITE.dtsx</Name>
+      <LastWriteTime>2022-02-10T17:50:40.8671854Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+  </LastBuildInfos>
+</BuildLog>
